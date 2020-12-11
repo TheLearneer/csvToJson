@@ -8,7 +8,7 @@ class StringUtils {
 
     getValueFormatByType(value) {
         let isNumber = !isNaN(value);
-        if (isNumber) {
+        if (isNumber && value !== '') {
             return Number(value);
         }
         const boolValue = value.toLowerCase();
